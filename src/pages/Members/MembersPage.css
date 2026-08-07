@@ -1,0 +1,77 @@
+.member-grid-full {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 4px;
+  padding: 0;
+  border: 1px solid rgba(219, 229, 241, 0.76);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(13, 116, 199, 0.055) 1px, transparent 1px),
+    linear-gradient(rgba(13, 116, 199, 0.04) 1px, transparent 1px),
+    rgba(255, 255, 255, 0.48);
+  background-size: 54px 54px, 54px 54px, auto;
+}
+
+.member-logo {
+  position: relative;
+  overflow: hidden;
+  min-height: 88px;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.035);
+  transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease;
+}
+
+.member-logo::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue), var(--gold));
+  opacity: 0;
+  transition: opacity 0.24s ease;
+}
+
+.member-logo:hover {
+  transform: translateY(-6px);
+  border-color: rgba(15, 109, 184, 0.24);
+  box-shadow: var(--shadow);
+}
+
+.member-logo:hover::before {
+  opacity: 1;
+}
+
+.member-logo img {
+  width: 100%;
+  max-height: 70px;
+  max-width: 142px;
+  object-fit: contain;
+  transition: transform 0.24s ease, filter 0.24s ease;
+}
+
+.member-logo:hover img {
+  transform: scale(1.04);
+  filter: saturate(1.08);
+}
+
+@media (max-width: 1050px) {
+  .member-grid-full {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .member-grid-full {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .member-logo {
+    min-height: 78px;
+    padding: 14px;
+  }
+}
