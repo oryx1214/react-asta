@@ -88,6 +88,8 @@ export const members = [
   ['Premium Techizat', 'ERA_CMS_IMG_37_1776060225.png'],
   ['EMS', 'ERA_CMS_IMG_73_1783424153.jpg'],
   ['Artmood', 'ERA_CMS_IMG_8_1772521027.png'],
+  ['Baku Advertising Company', 'logo-baku-advertising-company.png'],
+  ['AZ Projects Group', 'logo-az-projects-group.jpg'],
 ];
 
 export const news = [
