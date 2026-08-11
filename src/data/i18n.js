@@ -192,7 +192,22 @@ const newsBase = [
     },
   },
   { slug: 'bugunden-etibaren-baki-ekspo-merkezinde-7-ci-yerli-shirketlerin-tanitim-sergisi-oz-ishine-bashlayib', date: { az: '17 iyun 2026, 17:29', en: '17 June 2026, 17:29', ru: '17 июня 2026, 17:29' }, image: 'ERA_CMS_IMG_23_1785936705.jpg' },
-  { slug: 'bakida-umumdunya-shehersalma-forumunun-13-cu-sessiyasi--wuf13-oz-ishine-bashlayib', date: { az: '17 may 2026, 10:00', en: '17 May 2026, 10:00', ru: '17 мая 2026, 10:00' }, image: 'ERA_CMS_IMG_44_1785843583.jpg' },
+  {
+    slug: 'bakida-umumdunya-shehersalma-forumunun-13-cu-sessiyasi--wuf13-oz-ishine-bashlayib',
+    date: { az: '17 may 2026, 10:00', en: '17 May 2026, 10:00', ru: '17 мая 2026, 10:00' },
+    image: 'ERA_CMS_IMG_44_1785843583.jpg',
+    body: {
+      az: [
+        'ASTA üzvləri fərdi və modul tipli sərgi stendlərinin qurulması, montaj və demontaj işlərinin həyata keçirilməsi, eləcə də sərginin ümumi fəaliyyətinin koordinasiyası prosesində fəal iştirak edirlər.',
+      ],
+      en: [
+        'ASTA members are actively involved in the construction of custom and modular exhibition stands, installation and dismantling works, as well as in coordinating the overall operation of the exhibition.',
+      ],
+      ru: [
+        'Члены ASTA активно участвуют в строительстве индивидуальных и модульных выставочных стендов, выполнении работ по монтажу и демонтажу, а также в координации общей работы выставки.',
+      ],
+    },
+  },
   {
     slug: '5-may-tarixinde-baki-ekspo-merkezinde-19-cu-azerbaycan-beynelxalq-kend-teserrufati-sergi-ve-forumu--caspian-agro-week-ve-31-ci-azerbaycan-beynelxalq-qida-senayesi-sergisi--interfood-azerbaijan-sergilerinin-resmi-achilish-merasimi-kechirilmishdir',
     date: { az: '5 may 2026, 16:55', en: '5 May 2026, 16:55', ru: '5 мая 2026, 16:55' },
