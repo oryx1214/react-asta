@@ -251,10 +251,11 @@ export function getNews(lang = 'az') {
   }));
 
   const energyWeekIndex = localizedNews.findIndex((item) => item.slug === bakuEnergyWeekSlug);
-  if (energyWeekIndex === -1 || energyWeekIndex === localizedNews.length - 2) return localizedNews;
+  const energyWeekPosition = 1;
+  if (energyWeekIndex === -1 || energyWeekIndex === energyWeekPosition) return localizedNews;
 
   const [energyWeekNews] = localizedNews.splice(energyWeekIndex, 1);
-  localizedNews.splice(Math.max(localizedNews.length - 1, 0), 0, energyWeekNews);
+  localizedNews.splice(Math.min(energyWeekPosition, localizedNews.length), 0, energyWeekNews);
   return localizedNews;
 }
 
