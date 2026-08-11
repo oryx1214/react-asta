@@ -163,11 +163,13 @@ export function getLeaders(lang = 'az') {
   }));
 }
 
+const bakuEnergyWeekSlug = '1-iyun-tarixinde-baki-ekspo-merkezinde-baki-enerji-heftesi-baku-energy-week-oz-ishine-bashlayib';
+
 const newsBase = [
   {
-    slug: '1-iyun-tarixinde-baki-ekspo-merkezinde-baki-enerji-heftesi-baku-energy-week-oz-ishine-bashlayib',
+    slug: bakuEnergyWeekSlug,
     date: { az: '1 iyun 2026, 10:00', en: '1 June 2026, 10:00', ru: '1 июня 2026, 10:00' },
-    image: 'ERA_CMS_IMG_72_1736165311.png',
+    image: 'baku-energy-week-2026.jpg',
     body: {
       az: [
         'Bakı Enerji Həftəsinin ən mühüm hadisəsi Azərbaycan Prezidenti İlham Əliyevin rəsmi açılış mərasimində etdiyi çıxış oldu. Dövlət başçısı vurğuladı ki, Azərbaycanın qlobal neft strategiyası ölkənin müstəqillik tarixində mühüm mərhələ hesab olunan “Əsrin müqaviləsi” ilə ayrılmaz şəkildə bağlıdır.',
@@ -240,13 +242,20 @@ const newsCopy = {
 };
 
 export function getNews(lang = 'az') {
-  return newsBase.map((item, index) => ({
+  const localizedNews = newsBase.map((item, index) => ({
     ...item,
     title: newsCopy[lang][index][0],
     excerpt: newsCopy[lang][index][1],
     date: item.date[lang],
     body: item.body?.[lang],
   }));
+
+  const energyWeekIndex = localizedNews.findIndex((item) => item.slug === bakuEnergyWeekSlug);
+  if (energyWeekIndex === -1 || energyWeekIndex === localizedNews.length - 2) return localizedNews;
+
+  const [energyWeekNews] = localizedNews.splice(energyWeekIndex, 1);
+  localizedNews.splice(Math.max(localizedNews.length - 1, 0), 0, energyWeekNews);
+  return localizedNews;
 }
 
 export const calendarTitles = {
