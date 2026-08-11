@@ -9,6 +9,7 @@ export default function NewsDetailPage({ slug, lang = 'az' }) {
   const news = getNews(lang);
   const item = news.find((entry) => entry.slug === slug) || news[0];
   const relatedNews = news.filter((entry) => entry.slug !== item.slug).slice(0, 4);
+  const body = item.body?.length ? item.body : [uiText[lang].newsBody];
 
   return (
     <Page title={item.title} lang={lang}>
@@ -17,7 +18,9 @@ export default function NewsDetailPage({ slug, lang = 'az' }) {
           <img src={asset(item.image)} alt={item.title} />
           <p className="article-date"><CalendarDays size={17} /> {item.date}</p>
           <p>{item.excerpt}</p>
-          <p>{uiText[lang].newsBody}</p>
+          {body.map((paragraph, index) => (
+            <p key={`${item.slug}-paragraph-${index}`}>{paragraph}</p>
+          ))}
         </article>
 
         <aside className="related-news" aria-labelledby="related-news-title">

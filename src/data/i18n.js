@@ -164,6 +164,31 @@ export function getLeaders(lang = 'az') {
 }
 
 const newsBase = [
+  {
+    slug: '1-iyun-tarixinde-baki-ekspo-merkezinde-baki-enerji-heftesi-baku-energy-week-oz-ishine-bashlayib',
+    date: { az: '1 iyun 2026, 10:00', en: '1 June 2026, 10:00', ru: '1 июня 2026, 10:00' },
+    image: 'ERA_CMS_IMG_72_1736165311.png',
+    body: {
+      az: [
+        'Bakı Enerji Həftəsinin ən mühüm hadisəsi Azərbaycan Prezidenti İlham Əliyevin rəsmi açılış mərasimində etdiyi çıxış oldu. Dövlət başçısı vurğuladı ki, Azərbaycanın qlobal neft strategiyası ölkənin müstəqillik tarixində mühüm mərhələ hesab olunan “Əsrin müqaviləsi” ilə ayrılmaz şəkildə bağlıdır.',
+        'Daha sonra ABŞ Prezidenti Donald Trampın, Türkiyə Prezidenti Rəcəb Tayyib Ərdoğanın və Böyük Britaniyanın Baş naziri Kir Starmerin sərgi iştirakçılarına ünvanladıqları təbrik məktubları səsləndirildi.',
+        'Açılış mərasimində ABŞ Dövlət Katibinin iqtisadi, enerji və biznes məsələləri üzrə köməkçisi Keyleb Orr, Türkiyənin Enerji və Təbii Sərvətlər Naziri Alparslan Bayraktar, Böyük Britaniyanın Şərqi Avropa və Mərkəzi Asiya üzrə Ticarət Komissarı Devid Rid və digər rəsmi qonaqlar çıxış etdilər.',
+        'Bu il “Bakı Enerji Həftəsi”ndə dünyanın 44 ölkəsindən 274 şirkət iştirakını təsdiqləyib. İştirakçıların təxminən 60%-i xarici şirkətləri təmsil edir ki, bu da beynəlxalq əməkdaşlığın yüksək səviyyəsini nümayiş etdirir.',
+      ],
+      en: [
+        'The most significant event of Baku Energy Week was the speech delivered by the President of Azerbaijan, Ilham Aliyev, at the official opening ceremony. The Head of State emphasized that Azerbaijan’s global oil strategy is inseparably linked to the historic “Contract of the Century”.',
+        'This was followed by the reading of welcome letters addressed to the exhibition from the President of the United States, Donald Trump, the President of Türkiye, Recep Tayyip Erdogan, and the Prime Minister of the United Kingdom, Keir Starmer.',
+        'Speakers at the opening ceremony included Assistant Secretary of State for Economic, Energy, and Business Affairs of the United States Caleb Orr, Türkiye’s Minister of Energy and Natural Resources Alparslan Bayraktar, the United Kingdom’s Trade Commissioner for Eastern Europe and Central Asia David Reed, and other official guests.',
+        'This year, 274 companies from 44 countries confirmed their participation in Baku Energy Week. Around 60% of the exhibitors represent foreign companies, highlighting the high level of international cooperation.',
+      ],
+      ru: [
+        'Важнейшим событием Бакинской энергетической недели стало выступление Президента Азербайджана Ильхама Алиева на официальной церемонии открытия. Глава государства подчеркнул, что глобальная нефтяная стратегия Азербайджана неразрывно связана со знаменательным “Контрактом века”.',
+        'Во время церемонии открытия были зачитаны приветственные письма, направленные президентом США Дональдом Трампом, президентом Турции Реджепом Эрдоганом и премьер-министром Великобритании Киром Стармером.',
+        'На церемонии открытия выступили помощник государственного секретаря США по экономическим, энергетическим и бизнес-вопросам Калеб Орр, министр энергетики и природных ресурсов Турции Алпарслан Байрактар, торговый комиссар Великобритании по Восточной Европе и Центральной Азии Дэвид Рид и другие официальные гости.',
+        'В этом году участие в Baku Energy Week подтвердили 274 компании из 44 стран мира. Около 60% экспонентов представляют зарубежные компании, что подчеркивает высокий уровень международного сотрудничества.',
+      ],
+    },
+  },
   { slug: 'bugunden-etibaren-baki-ekspo-merkezinde-7-ci-yerli-shirketlerin-tanitim-sergisi-oz-ishine-bashlayib', date: { az: '17 iyun 2026, 17:29', en: '17 June 2026, 17:29', ru: '17 июня 2026, 17:29' }, image: 'ERA_CMS_IMG_23_1785936705.jpg' },
   { slug: 'bakida-umumdunya-shehersalma-forumunun-13-cu-sessiyasi--wuf13-oz-ishine-bashlayib', date: { az: '17 may 2026, 10:00', en: '17 May 2026, 10:00', ru: '17 мая 2026, 10:00' }, image: 'ERA_CMS_IMG_44_1785843583.jpg' },
   { slug: '5-may-tarixinde-baki-ekspo-merkezinde-19-cu-azerbaycan-beynelxalq-kend-teserrufati-sergi-ve-forumu--caspian-agro-week-ve-31-ci-azerbaycan-beynelxalq-qida-senayesi-sergisi--interfood-azerbaijan-sergilerinin-resmi-achilish-merasimi-kechirilmishdir', date: { az: '5 may 2026, 16:55', en: '5 May 2026, 16:55', ru: '5 мая 2026, 16:55' }, image: 'ERA_CMS_IMG_13_1785934665.jpg' },
@@ -177,6 +202,7 @@ const newsBase = [
 
 const newsCopy = {
   az: [
+    ['1 iyun tarixində Bakı Ekspo Mərkəzində Bakı Enerji Həftəsi (Baku Energy Week) öz işinə başlayıb', 'Bakı Ekspo Mərkəzində üç mühüm tədbiri birləşdirən “Bakı Enerji Həftəsi”nə start verilib: Caspian Oil and Gas, Caspian Power və Bakı Enerji Forumu. Həftə çərçivəsində TransLogistica Caspian sərgisi də keçirilir.'],
     ['Bugündən etibarən Bakı Ekspo Mərkəzində “7-ci Yerli Şirkətlərin Tanıtım Sərgisi” öz işinə başlayıb', 'Sərgidə inşaat, qida, İKT, təhsil, sənaye, kənd təsərrüfatı, logistika, tekstil və digər sahələrdə fəaliyyət göstərən 300-dən çox yerli şirkətin məhsul və xidmətləri nümayiş olunur.'],
     ['Bakıda Ümumdünya Şəhərsalma Forumunun 13-cü sessiyası — WUF13 öz işinə başlayıb', 'ASTA üzvləri Urban Expo sərgisində stendlərin qurulmasında və sərginin idarə olunmasında aktiv iştirak edirlər. Sərgidə dünyanın 85 ölkəsindən 260 şirkət iştirak edir.'],
     ['5 may tarixində Bakı Ekspo Mərkəzində Caspian Agro Week və InterFood Azerbaijan sərgilərinin rəsmi açılış mərasimi keçirilmişdir', '19-cu Azərbaycan Beynəlxalq Kənd Təsərrüfatı Sərgi və Forumu və 31-ci Azərbaycan Beynəlxalq Qida Sənayesi Sərgisinin rəsmi açılış mərasimi Bakı Ekspo Mərkəzində keçirilmişdir.'],
@@ -188,6 +214,7 @@ const newsCopy = {
     ['ASTA UFI tərəfindən sərgi auditi aparmaq hüququnu alıb', 'Assosiasiya Azərbaycanda sərgi statistikalarının auditini aparmaq hüququ əldə edib.'],
   ],
   en: [
+    ['On June 1, Baku Expo Center hosted the opening of Baku Energy Week', 'Baku Energy Week opened at Baku Expo Center, bringing together Caspian Oil and Gas, Caspian Power and the Baku Energy Forum. TransLogistica Caspian is also being held within the framework of the week.'],
     ['The 7th Local Companies Promotion Exhibition has officially opened today at the Baku Expo Center', 'More than 300 local companies operating in construction, food production, ICT, education, industry, agriculture, logistics, textiles and other fields are presenting their products and services.'],
     ['The 13th session of the World Urban Forum — WUF13 has officially started in Baku', 'ASTA members are actively involved in the construction of exhibition stands and in the management of Urban Expo, which brings together 260 companies from 85 countries.'],
     ['The official opening ceremony of Caspian Agro Week and InterFood Azerbaijan took place at the Baku Expo Center', 'The opening ceremony of the 19th Azerbaijan International Agriculture Exhibition and Forum and the 31st Azerbaijan International Food Industry Exhibition was held at Baku Expo Center.'],
@@ -199,6 +226,7 @@ const newsCopy = {
     ['ASTA received the right from UFI to conduct exhibition audits', 'The association obtained the right to audit exhibition statistics in Azerbaijan.'],
   ],
   ru: [
+    ['1 июня в Баку Экспо Центре стартовала Бакинская энергетическая неделя', 'В Баку Экспо Центре стартовала Baku Energy Week, объединившая Caspian Oil and Gas, Caspian Power и Бакинский энергетический форум. В рамках недели также проходит выставка TransLogistica Caspian.'],
     ['Сегодня в Баку Экспо Центре начала работу 7-я Выставка продвижения местных компаний', 'На выставке представлены продукция и услуги более 300 местных компаний из сфер строительства, пищевой промышленности, ИКТ, образования, промышленности, сельского хозяйства, логистики, текстиля и других направлений.'],
     ['В Баку начала работу 13-я сессия Всемирного форума городов — WUF13', 'Члены ASTA активно участвуют в строительстве выставочных стендов и управлении Urban Expo, где представлены 260 компаний из 85 стран мира.'],
     ['В Баку Экспо Центре состоялась официальная церемония открытия Caspian Agro Week и InterFood Azerbaijan', 'В Баку Экспо Центре прошла церемония открытия 19-й Азербайджанской международной выставки и форума сельского хозяйства и 31-й Азербайджанской международной выставки пищевой промышленности.'],
@@ -217,6 +245,7 @@ export function getNews(lang = 'az') {
     title: newsCopy[lang][index][0],
     excerpt: newsCopy[lang][index][1],
     date: item.date[lang],
+    body: item.body?.[lang],
   }));
 }
 
