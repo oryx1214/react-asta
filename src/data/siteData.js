@@ -153,7 +153,7 @@ export const calendarItems = [
   ['18-ci Beynəlxalq İstilik, Havalandırma, Kondisionerləşdirilmə, Su təchizatı, Santexnika və Üzgüçülük Hovuzu Sərgisi', '14 - 16 oktyabr 2026', 'www.aquatherm.az', 'https://www.aquatherm.az/', 'ERA_CMS_IMG_82_1741593966.jpg'],
   ['5-ci Yubiley Xəzər Beynəlxalq Plastik və Polimer Sənayesi Sərgisi', '14 - 16 oktyabr 2026', 'www.plastex.az', 'https://www.plastex.az/', 'ERA_CMS_IMG_79_1768383932.jpg'],
   ['14-cü Xəzər Beynəlxalq Yol İnfrastrukturu və İctimai Nəqliyyat Sərgisi', '14 - 16 oktyabr 2026', 'www.roadtraffic.az', 'https://www.roadtraffic.az/', 'ERA_CMS_IMG_35_1706711657.png'],
-  ['LIFEX', '3 - 5 dekabr 2026', 'lifex.az', 'https://lifex.az/ru/main', 'lifex-favicon.ico'],
+  ['1-ci Azərbaycan Beynəlxalq Həyat Tərzi və İstehlak Sənayeləri Sərgisi', '3 - 5 dekabr 2026', 'lifex.az', 'https://lifex.az/ru/main', 'lifex-logo.webp'],
 ];
 
 export const joinFields = ['Şirkət', 'Fəaliyyət növü', 'Ünvan', 'Telefon', 'Veb Sayt', 'Şirkət haqqında qısa məlumat', 'Əlaqə üçün şəxs', 'Email', 'Əlaqə nömrəsi'];
