@@ -1,0 +1,42 @@
+.leaders-list {
+  row-gap: 34px;
+}
+
+.profile-page {
+  display: grid;
+  grid-template-columns: minmax(240px, 360px) 1fr;
+  gap: 42px;
+  align-items: center;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.profile-page img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  background: #dfe7f2;
+  box-shadow: var(--shadow);
+}
+
+.profile-page p {
+  color: #26344d;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.profile-role {
+  margin: 0 0 12px;
+  color: var(--red) !important;
+  font-weight: 850;
+}
+
+@media (max-width: 640px) {
+  .profile-page {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-page p {
+    font-size: 16px;
+  }
+}
