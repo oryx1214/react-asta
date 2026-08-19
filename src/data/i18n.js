@@ -134,7 +134,7 @@ export const pages = {
 
 const leaderBase = [
   { slug: 'ferid-memmedov', image: 'farid-mammadov.jpg', name: { az: 'Fərid Məmmədov', en: 'Farid Mammadov', ru: 'Фарид Мамедов' } },
-  { slug: 'behruz-hidayetzade', image: 'behruz-hidayetzade.jpg', name: { az: 'Bəhruz Hidayətzadə', en: 'Behruz Hidayatzade', ru: 'Бехруз Хидаятзаде' } },
+  { slug: 'behruz-hidayetzade', image: 'behruz-hidayetzade.jpg', name: { az: 'Bəhruz Hidayətzadə', en: 'Behruz Hidayatzade', ru: 'Бахруз Хидаятзаде' } },
   { slug: 'ilham-huseynov', image: '9ff20.png', name: { az: 'İlham Hüseynov', en: 'Ilham Huseynov', ru: 'Ильхам Гусейнов' } },
   { slug: 'elmira-agayeva', image: '4ff20.png', name: { az: 'Elmira Ağayeva', en: 'Elmira Aghayeva', ru: 'Эльмира Агаева' } },
 ];
