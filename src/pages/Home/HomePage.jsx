@@ -48,19 +48,19 @@ function StructurePreview({ lang }) {
 function StatsPreview({ lang }) {
   const statsByLang = {
     az: [
-      ['12+', 'ASTA üzv şirkətləri'],
+      ['30+', 'ASTA üzv şirkətləri'],
       ['2026', 'Sərgi təqvimi'],
       ['UFI', 'Sərgi auditi səlahiyyəti'],
       ['100+', 'Sənaye əlaqələri'],
     ],
     en: [
-      ['12+', 'ASTA member companies'],
+      ['30+', 'ASTA member companies'],
       ['2026', 'Exhibition calendar'],
       ['UFI', 'Exhibition audit authority'],
       ['100+', 'Industry partnerships'],
     ],
     ru: [
-      ['12+', 'Компании-члены ASTA'],
+      ['30+', 'Компании-члены ASTA'],
       ['2026', 'Календарь выставок'],
       ['UFI', 'Право аудита выставок'],
       ['100+', 'Отраслевые связи'],
