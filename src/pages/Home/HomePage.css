@@ -184,6 +184,23 @@
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
 }
 
+:root[data-theme="dark"] .member-logo img {
+  padding: 8px 12px;
+  border: 1px solid rgba(216, 234, 250, 0.72);
+  border-radius: 7px;
+  background: #f8fbff;
+  box-shadow:
+    0 0 0 3px rgba(85, 169, 232, 0.08),
+    0 8px 18px rgba(0, 0, 0, 0.22);
+}
+
+:root[data-theme="dark"] .member-logo:hover img {
+  border-color: rgba(242, 184, 75, 0.8);
+  box-shadow:
+    0 0 0 3px rgba(242, 184, 75, 0.1),
+    0 10px 24px rgba(0, 0, 0, 0.3);
+}
+
 .member-logo img {
   max-height: 70px;
   object-fit: contain;
