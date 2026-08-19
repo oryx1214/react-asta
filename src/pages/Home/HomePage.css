@@ -178,6 +178,12 @@
   box-shadow: var(--shadow);
 }
 
+:root[data-theme="dark"] .member-logo {
+  border-color: rgba(105, 169, 220, 0.26);
+  background: linear-gradient(180deg, rgba(28, 51, 78, 0.98), rgba(18, 36, 57, 0.96));
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
 .member-logo img {
   max-height: 70px;
   object-fit: contain;
