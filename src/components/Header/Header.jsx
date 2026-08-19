@@ -1,10 +1,10 @@
 import React from 'react';
-import { ChevronDown, Menu, X } from 'lucide-react';
+import { ChevronDown, Menu, Moon, Sun, X } from 'lucide-react';
 import { navByLang, switchLanguagePath, uiText, withLang } from '../../data/i18n.js';
 import { asset } from '../../utils/assets.js';
 import './Header.css';
 
-export default function Header({ onNavigate, lang = 'az', currentPath = '/az/main' }) {
+export default function Header({ onNavigate, lang = 'az', currentPath = '/az/main', theme = 'light', onThemeToggle }) {
   const [menuOpen, setMenuOpen] = React.useState(false);
   const navItems = navByLang[lang];
   const text = uiText[lang];
@@ -60,6 +60,15 @@ export default function Header({ onNavigate, lang = 'az', currentPath = '/az/mai
             );
           })}
         </div>
+        <button
+          className="theme-toggle"
+          type="button"
+          aria-label={theme === 'dark' ? 'Use light theme' : 'Use dark theme'}
+          title={theme === 'dark' ? 'Use light theme' : 'Use dark theme'}
+          onClick={onThemeToggle}
+        >
+          {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+        </button>
       </div>
     </header>
   );

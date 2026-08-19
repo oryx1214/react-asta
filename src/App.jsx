@@ -39,6 +39,7 @@ function renderRoute(path, go) {
 
 export default function App() {
   const [path, setPath] = React.useState(normalizePath(window.location.pathname));
+  const [theme, setTheme] = React.useState(() => localStorage.getItem('asta-theme') || 'light');
   const lang = getLangFromPath(path);
 
   React.useEffect(() => {
@@ -46,6 +47,11 @@ export default function App() {
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);
   }, []);
+
+  React.useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    localStorage.setItem('asta-theme', theme);
+  }, [theme]);
 
   const go = React.useCallback((href) => {
     if (href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
@@ -56,7 +62,7 @@ export default function App() {
 
   return (
     <>
-      <Header onNavigate={go} lang={lang} currentPath={path} />
+      <Header onNavigate={go} lang={lang} currentPath={path} theme={theme} onThemeToggle={() => setTheme((value) => value === 'dark' ? 'light' : 'dark')} />
       <main id="content">{renderRoute(path, go)}</main>
       <Footer lang={lang} />
     </>
