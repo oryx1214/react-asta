@@ -123,7 +123,7 @@ function NewsPreview({ lang }) {
 export default function HomePage({ onNavigate, lang = 'az' }) {
   const heroTitle = {
     az: 'Azərbaycan Sərgi Təşkilatçıları Assosiasiyası',
-    en: 'Azerbaijan Exhibition Organizers Association',
+    en: 'Azerbaijan Exhibition Organisers Association',
     ru: 'Ассоциация организаторов выставок Азербайджана',
   };
 

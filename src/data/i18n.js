@@ -34,7 +34,7 @@ export const uiText = {
     relatedNews: 'Other news',
     newsBody: 'This section has been moved from a static HTML page into a React route. The full news text can later be moved from the CMS content into a separate data file.',
     notFoundText: 'No React route was found for this address. Please choose one of the available sections from the menu.',
-    footerText: 'Azerbaijan Exhibition Organizers Association brings together companies working in the exhibition, fair, congress and events industry in Azerbaijan.',
+    footerText: 'Azerbaijan Exhibition Organisers Association brings together companies working in the exhibition, fair, congress and events industry in Azerbaijan.',
     copyright: 'Copyright © 2026. All rights reserved.',
     languageLabel: 'Language selection',
     menuLabel: 'Menu',
@@ -102,11 +102,11 @@ export const pages = {
     about: {
       title: 'About',
       paragraphs: [
-        'Azerbaijan Exhibition Organizers Association (ASTA) is a public association that brings together leading exhibition organizers, venues, centers and service companies operating in the exhibition, fair, congress and events industry in Azerbaijan.',
-        'The main purpose of the association is to support coordination among exhibition organizers and to encourage the exchange of knowledge and experience between them.',
+        'Azerbaijan Exhibition Organisers Association (ASTA) is a public association that brings together leading exhibition organisers, venues, centers and service companies operating in the exhibition, fair, congress and events industry in Azerbaijan.',
+        'The main purpose of the association is to support coordination among exhibition organisers and to encourage the exchange of knowledge and experience between them.',
       ],
       tasksTitle: 'ASTA key objectives',
-      tasks: ['Create conditions for the development of exhibitions in the country', 'Educate exhibition organizers', 'Apply new technologies available in the industry', 'Support better exhibition culture and efficiency', 'Study international experience and apply it in Azerbaijan'],
+      tasks: ['Create conditions for the development of exhibitions in the country', 'Educate exhibition organisers', 'Apply new technologies available in the industry', 'Support better exhibition culture and efficiency', 'Study international experience and apply it in Azerbaijan'],
     },
     titles: { structure: 'Structure', members: 'Members', becomeMember: 'Become a member', audit: 'Exhibition audit', news: 'Industry news', calendar: 'Exhibition calendar in Azerbaijan', contact: 'Contact', notFound: 'Page not found' },
     audit: ['ASTA is the only organization in Azerbaijan authorized by UFI, the Global Association of the Exhibition Industry, to conduct exhibition audits.', 'An exhibition statistics audit is a procedure in which an independent auditor checks and confirms exhibition statistics: number of exhibitors and visitors, exhibition area, and the number and list of participating countries. The parameters are checked according to UFI Audit Rules.'],
