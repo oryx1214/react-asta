@@ -7,6 +7,9 @@ import './ContactPage.css';
 
 export default function ContactPage({ lang = 'az' }) {
   const page = pages[lang];
+  const address = lang === 'az'
+    ? 'Azərbaycan, Bakı, Nərimanov rayonu, Zaur Nudirəliyev küçəsi, 61, AZ1075'
+    : 'Azerbaijan, Baku, Narimanov district, Zaur Nudiraliyev street, 61, AZ1075';
   const fieldNames = ['name', 'email', 'phone', 'subject'];
   const [submitStatus, setSubmitStatus] = useState('idle');
 
@@ -47,7 +50,7 @@ export default function ContactPage({ lang = 'az' }) {
         <div className="contact-card">
           <h3>ASTA</h3>
           <a href="https://maps.google.com/?q=Zaur%20Nudir%C9%99liyev%2061%20Baku">
-            <MapPin size={18} /> Azerbaijan, Baku, Narimanov district, Zaur Nudiraliyev street, 61, AZ1075
+            <MapPin size={18} /> {address}
           </a>
           <a href="tel:+994554000540"><Phone size={18} /> +994 55 400-05-40</a>
           <a href="mailto:info@asta.az"><Mail size={18} /> info@asta.az</a>

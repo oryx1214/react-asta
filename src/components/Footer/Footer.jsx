@@ -30,6 +30,9 @@ function LinkedInIcon() {
 export default function Footer({ lang = 'az' }) {
   const text = uiText[lang];
   const title = pages[lang].titles.contact;
+  const address = lang === 'az'
+    ? 'Azərbaycan, Bakı, Nərimanov rayonu, Zaur Nudirəliyev küçəsi, 61, AZ1075'
+    : 'Azerbaijan, Baku, Narimanov district, Zaur Nudiraliyev street, 61, AZ1075';
 
   return (
     <footer className="footer">
@@ -40,7 +43,7 @@ export default function Footer({ lang = 'az' }) {
         </div>
         <div className="contact-list">
           <h2>{title}</h2>
-          <a href="https://www.google.com/maps/place/Caspian+Event+Organisers+(CEO)/@40.4126151,49.85489,17z/data=!3m1!4b1!4m6!3m5!1s0x40307d6d96a7a0e5:0xe466794cc2f694fc!8m2!3d40.4126151!4d49.85489!16s%2Fg%2F11swtc32qm?entry=ttu&g_ep=EgoyMDI2MDcyNi4wIKXMDSoASAFQAw%3D%3D"><MapPin size={18} /> <span>Azerbaijan, Baku, Zaur Nudiraliyev street, 61</span></a>
+          <a href="https://www.google.com/maps/place/Caspian+Event+Organisers+(CEO)/@40.4126151,49.85489,17z/data=!3m1!4b1!4m6!3m5!1s0x40307d6d96a7a0e5:0xe466794cc2f694fc!8m2!3d40.4126151!4d49.85489!16s%2Fg%2F11swtc32qm?entry=ttu&g_ep=EgoyMDI2MDcyNi4wIKXMDSoASAFQAw%3D%3D"><MapPin size={18} /> <span>{address}</span></a>
           <a href="tel:+994554000540"><Phone size={18} /> <span>+994 55 400-05-40</span></a>
           <a href="mailto:info@asta.az"><Mail size={18} /> <span>info@asta.az</span></a>
           <div className="socials">
