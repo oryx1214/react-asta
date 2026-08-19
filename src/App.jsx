@@ -47,6 +47,23 @@ export default function App() {
     return () => window.removeEventListener('popstate', onPop);
   }, []);
 
+  React.useEffect(() => {
+    if (lang !== 'en') return undefined;
+
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    const textNodes = [];
+    let node = walker.nextNode();
+    while (node) {
+      if (!['SCRIPT', 'STYLE'].includes(node.parentElement?.tagName)) textNodes.push(node);
+      node = walker.nextNode();
+    }
+    textNodes.forEach((textNode) => {
+      textNode.nodeValue = textNode.nodeValue.replaceAll('i', 'ı');
+    });
+
+    return undefined;
+  }, [lang, path]);
+
   const go = React.useCallback((href) => {
     if (href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
     window.history.pushState({}, '', href);
