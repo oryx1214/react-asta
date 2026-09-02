@@ -34,10 +34,9 @@ export default function BecomeMemberPage({ lang = 'az' }) {
       const response = await fetch('https://formsubmit.co/ajax/anvar.mammadov@ceo.az', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
           Accept: 'application/json',
         },
-        body: JSON.stringify(Object.fromEntries(formData)),
+        body: formData,
         signal: controller.signal,
       });
 
