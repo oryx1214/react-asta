@@ -31,7 +31,7 @@ export default function BecomeMemberPage({ lang = 'az' }) {
       const formData = new FormData(form);
       formData.set('_url', window.location.href);
 
-      const response = await fetch('https://formsubmit.co/ajax/anvar.mammadov@ceo.az', {
+      const response = await fetch('https://formsubmit.co/ajax/info@asta.az', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -57,11 +57,12 @@ export default function BecomeMemberPage({ lang = 'az' }) {
     <Page title={page.titles.becomeMember} lang={lang}>
       <form
         className="form-grid"
-        action="https://formsubmit.co/anvar.mammadov@ceo.az"
+        action="https://formsubmit.co/info@asta.az"
         method="POST"
         onSubmit={handleSubmit}
       >
         <input type="hidden" name="_subject" value="New ASTA membership request" />
+        <input type="hidden" name="_cc" value="anvar.mammadov@ceo.az" />
         <input type="hidden" name="_template" value="table" />
         <input type="hidden" name="_captcha" value="false" />
         {page.joinFields.map((field, index) => (
