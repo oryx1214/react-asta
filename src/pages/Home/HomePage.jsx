@@ -2,7 +2,7 @@ import { ChevronRight } from 'lucide-react';
 import { members } from '../../data/siteData.js';
 import { getLeaders, getNews, pages, uiText, withLang } from '../../data/i18n.js';
 import { asset } from '../../utils/assets.js';
-import { LeaderCard, NewsCard, SectionTitle } from '../../components/UI/Cards.jsx';
+import { LeaderCard, LeaderGrid, NewsCard, SectionTitle } from '../../components/UI/Cards.jsx';
 import './HomePage.css';
 
 function ActionLink({ href, onNavigate, children }) {
@@ -38,7 +38,7 @@ function StructurePreview({ lang }) {
     <section className="section" id="structure">
       <div className="container">
         <SectionTitle title={pages[lang].titles.structure} />
-        <div className="leaders-grid">{leaders.map((person) => <LeaderCard person={person} lang={lang} key={person.slug} />)}</div>
+        <LeaderGrid>{leaders.map((person) => <LeaderCard person={person} lang={lang} key={person.slug} />)}</LeaderGrid>
         <CenteredAction href={withLang(lang, 'structure')} label={text.more} />
       </div>
     </section>

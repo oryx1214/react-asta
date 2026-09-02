@@ -25,15 +25,19 @@ export default function BecomeMemberPage({ lang = 'az' }) {
     setSubmitStatus('sending');
     const form = event.currentTarget;
     const controller = new AbortController();
-    const timeout = window.setTimeout(() => controller.abort(), 5000);
+    const timeout = window.setTimeout(() => controller.abort(), 10000);
 
     try {
+      const formData = new FormData(form);
+      formData.set('_url', window.location.href);
+
       const response = await fetch('https://formsubmit.co/ajax/anvar.mammadov@ceo.az', {
         method: 'POST',
         headers: {
+          'Content-Type': 'application/json',
           Accept: 'application/json',
         },
-        body: new FormData(form),
+        body: JSON.stringify(Object.fromEntries(formData)),
         signal: controller.signal,
       });
 
@@ -44,8 +48,7 @@ export default function BecomeMemberPage({ lang = 'az' }) {
       form.reset();
       setSubmitStatus('success');
     } catch {
-      form.reset();
-      setSubmitStatus('success');
+      setSubmitStatus('error');
     } finally {
       window.clearTimeout(timeout);
     }
@@ -55,6 +58,8 @@ export default function BecomeMemberPage({ lang = 'az' }) {
     <Page title={page.titles.becomeMember} lang={lang}>
       <form
         className="form-grid"
+        action="https://formsubmit.co/anvar.mammadov@ceo.az"
+        method="POST"
         onSubmit={handleSubmit}
       >
         <input type="hidden" name="_subject" value="New ASTA membership request" />

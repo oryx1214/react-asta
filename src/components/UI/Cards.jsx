@@ -1,7 +1,44 @@
+import { useEffect, useRef, useState } from 'react';
 import { CalendarDays } from 'lucide-react';
 import { withLang } from '../../data/i18n.js';
 import { asset } from '../../utils/assets.js';
 import './Cards.css';
+
+export function LeaderGrid({ children, className = '' }) {
+  const [isVisible, setIsVisible] = useState(false);
+  const gridRef = useRef(null);
+
+  useEffect(() => {
+    const node = gridRef.current;
+
+    if (!node || isVisible) return;
+
+    if (!('IntersectionObserver' in window)) {
+      setIsVisible(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.22, rootMargin: '0px 0px -8% 0px' },
+    );
+
+    observer.observe(node);
+
+    return () => observer.disconnect();
+  }, [isVisible]);
+
+  return (
+    <div ref={gridRef} className={`leaders-grid ${isVisible ? 'is-visible' : ''} ${className}`.trim()}>
+      {children}
+    </div>
+  );
+}
 
 export function LeaderCard({ person, lang = 'az' }) {
   const href = withLang(lang, 'structure', `/${person.slug}`);
