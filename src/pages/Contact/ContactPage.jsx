@@ -24,7 +24,7 @@ export default function ContactPage({ lang = 'az' }) {
       const formData = new FormData(form);
       formData.set('_url', window.location.href);
 
-      const response = await fetch('https://formsubmit.co/ajax/info@asta.az', {
+      const response = await fetch('https://formsubmit.co/ajax/anvar.mammadov@ceo.az', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -59,12 +59,12 @@ export default function ContactPage({ lang = 'az' }) {
         </div>
         <form
           className="form-grid compact-form"
-          action="https://formsubmit.co/info@asta.az"
+          action="https://formsubmit.co/anvar.mammadov@ceo.az"
           method="POST"
           onSubmit={handleSubmit}
         >
           <input type="hidden" name="_subject" value="New message from ASTA contact form" />
-          <input type="hidden" name="_cc" value="anvar.mammadov@ceo.az" />
+          <input type="hidden" name="_cc" value="info@asta.az" />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_captcha" value="false" />
           {page.contactFields.map((field, index) => (
