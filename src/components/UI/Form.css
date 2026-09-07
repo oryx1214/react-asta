@@ -75,6 +75,10 @@
   color: #b42318;
 }
 
+.form-botcheck {
+  display: none;
+}
+
 @media (max-width: 1050px) {
   .form-grid,
   .compact-form {

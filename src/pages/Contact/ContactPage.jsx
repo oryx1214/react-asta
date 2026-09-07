@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
 import Page from '../../components/UI/Page.jsx';
+import { WEB3FORMS_ACCESS_KEY, WEB3FORMS_ENDPOINT } from '../../config/forms.js';
 import { pages, uiText } from '../../data/i18n.js';
 import '../../components/UI/Form.css';
 import './ContactPage.css';
@@ -22,9 +23,9 @@ export default function ContactPage({ lang = 'az' }) {
 
     try {
       const formData = new FormData(form);
-      formData.set('_url', window.location.href);
+      formData.set('page_url', window.location.href);
 
-      const response = await fetch('https://formsubmit.co/ajax/info@asta.az', {
+      const response = await fetch(WEB3FORMS_ENDPOINT, {
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -33,7 +34,9 @@ export default function ContactPage({ lang = 'az' }) {
         signal: controller.signal,
       });
 
-      if (!response.ok) {
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
         throw new Error('Form submission failed');
       }
 
@@ -59,13 +62,14 @@ export default function ContactPage({ lang = 'az' }) {
         </div>
         <form
           className="form-grid compact-form"
-          action="https://formsubmit.co/info@asta.az"
+          action={WEB3FORMS_ENDPOINT}
           method="POST"
           onSubmit={handleSubmit}
         >
-          <input type="hidden" name="_subject" value="New message from ASTA contact form" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY} />
+          <input type="hidden" name="subject" value="New message from ASTA contact form" />
+          <input type="hidden" name="from_name" value="ASTA website" />
+          <input type="checkbox" name="botcheck" className="form-botcheck" tabIndex="-1" autoComplete="off" />
           {page.contactFields.map((field, index) => (
             <label className="field" key={field}>
               <span>{field}</span>
