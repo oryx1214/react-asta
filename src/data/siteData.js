@@ -86,7 +86,7 @@ export const members = [
   ['Unna Studio', 'ERA_CMS_IMG_81_1770377128.jpg'],
   ['Synergy Partnership', 'ERA_CMS_IMG_82_1772520867.jpg'],
   ['Premium Techizat', 'ERA_CMS_IMG_37_1776060225.png'],
-  ['EMS', 'ERA_CMS_IMG_73_1783424153.jpg'],
+  ['EMS', 'ems-logo-black.png'],
   ['Artmood', 'ERA_CMS_IMG_8_1772521027.png'],
   ['Baku Advertising Company', 'logo-baku-advertising-company.png'],
   ['AZ Projects Group', 'logo-az-projects-group.jpg'],
