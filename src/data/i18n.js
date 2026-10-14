@@ -167,6 +167,28 @@ const bakuEnergyWeekSlug = '1-iyun-tarixinde-baki-ekspo-merkezinde-baki-enerji-h
 
 const newsBase = [
   {
+    slug: 'adex-2026-ve-securex-caspian-sergilerinin-achilishi-kechirilib',
+    date: { az: '30 sentyabr 2026', en: '30 September 2026', ru: '30 сентября 2026' },
+    image: 'adex-securex-caspian-2026.jpg',
+    body: {
+      az: [
+        'Sentyabrın 30-da Bakı Ekspo Mərkəzində Qafqaz regionunun ən iri hərbi-texnoloji platformalarından biri olan və dünya müdafiə sənayesinin aparıcı şirkətlərini bir araya gətirən ADEX 2026 - 6-cı Azərbaycan Beynəlxalq Müdafiə və Securex Caspian - 15-ci Beynəlxalq “Daxili təhlükəsizlik, Mühafizə və Xilasetmə texnikası” Sərgilərinin açılışı keçirilib.',
+        'Azərbaycan Respublikasının Prezidenti İlham Əliyev və birinci xanım Mehriban Əliyeva “ADEX 2026” və “Securex Caspian” sərgiləri ilə tanış olublar.',
+        'Sərgilərdə bu il ümumilikdə 52 ölkə təmsil olunur. 30 ölkədən 277 şirkət və təşkilat sərgilərdə iştirak edir. Tədbirin təşkilatçısı Caspian Event Organisers şirkətidir.',
+      ],
+      en: [
+        'On 30 September, the ADEX 2026 - 6th Azerbaijan International Defence Exhibition and Securex Caspian — the 15th International Exhibition “Homeland Security, Protection and Rescue Equipment” Exhibition opened its doors at the Baku Expo Center.',
+        'President of the Republic of Azerbaijan Ilham Aliyev and First Lady Mehriban Aliyeva visited the exhibitions.',
+        '277 companies and organisations from 30 countries are participating at the exhibitions. The events are organised by Caspian Event Organisers.',
+      ],
+      ru: [
+        '30 сентября в Баку Экспо Центре начала работу 6-я Азербайджанская Международная Оборонная Выставка ADEX 2026 и 15-я Международная Выставка «Внутренняя безопасность, Охрана и Спасательная техника» Securex Caspian.',
+        'Президент Азербайджанской Республики Ильхам Алиев и первая леди Мехрибан Алиева ознакомились с работой выставок.',
+        'В выставках принимают участие 277 компаний и организаций из 30 стран. Организатором является компания Caspian Event Organisers.',
+      ],
+    },
+  },
+  {
     slug: bakuEnergyWeekSlug,
     date: { az: '1 iyun 2026, 10:00', en: '1 June 2026, 10:00', ru: '1 июня 2026, 10:00' },
     image: 'baku-energy-week-2026.jpg',
@@ -239,6 +261,7 @@ const newsBase = [
 
 const newsCopy = {
   az: [
+    ['ADEX 2026 və Securex Caspian sərgilərinin açılışı keçirilib', 'Bakı Ekspo Mərkəzində ADEX 2026 və Securex Caspian sərgiləri açılıb. Sərgilərdə 30 ölkədən 277 şirkət və təşkilat iştirak edir.'],
     ['1 iyun tarixində Bakı Ekspo Mərkəzində Bakı Enerji Həftəsi (Baku Energy Week) öz işinə başlayıb', 'Bakı Ekspo Mərkəzində üç mühüm tədbiri birləşdirən “Bakı Enerji Həftəsi”nə start verilib: Caspian Oil and Gas, Caspian Power və Bakı Enerji Forumu. Həftə çərçivəsində TransLogistica Caspian sərgisi də keçirilir.'],
     ['Bugündən etibarən Bakı Ekspo Mərkəzində “7-ci Yerli Şirkətlərin Tanıtım Sərgisi” öz işinə başlayıb', 'Sərgidə inşaat, qida, İKT, təhsil, sənaye, kənd təsərrüfatı, logistika, tekstil və digər sahələrdə fəaliyyət göstərən 300-dən çox yerli şirkətin məhsul və xidmətləri nümayiş olunur.'],
     ['Bakıda Ümumdünya Şəhərsalma Forumunun 13-cü sessiyası — WUF13 öz işinə başlayıb', 'ASTA üzvləri Urban Expo sərgisində stendlərin qurulmasında və sərginin idarə olunmasında aktiv iştirak edirlər. Sərgidə dünyanın 85 ölkəsindən 260 şirkət iştirak edir.'],
@@ -251,6 +274,7 @@ const newsCopy = {
     ['ASTA UFI tərəfindən sərgi auditi aparmaq hüququnu alıb', 'Assosiasiya Azərbaycanda sərgi statistikalarının auditini aparmaq hüququ əldə edib.'],
   ],
   en: [
+    ['ADEX 2026 and Securex Caspian exhibitions opened', 'ADEX 2026 and Securex Caspian exhibitions have opened at the Baku Expo Center, with 277 companies and organisations from 30 countries participating.'],
     ['On June 1, Baku Expo Center hosted the opening of Baku Energy Week', 'Baku Energy Week opened at Baku Expo Center, bringing together Caspian Oil and Gas, Caspian Power and the Baku Energy Forum. TransLogistica Caspian is also being held within the framework of the week.'],
     ['The 7th Local Companies Promotion Exhibition has officially opened today at the Baku Expo Center', 'More than 300 local companies operating in construction, food production, ICT, education, industry, agriculture, logistics, textiles and other fields are presenting their products and services.'],
     ['The 13th session of the World Urban Forum — WUF13 has officially started in Baku', 'ASTA members are actively involved in the construction of exhibition stands and in the management of Urban Expo, which brings together 260 companies from 85 countries.'],
@@ -263,6 +287,7 @@ const newsCopy = {
     ['ASTA received the right from UFI to conduct exhibition audits', 'The association obtained the right to audit exhibition statistics in Azerbaijan.'],
   ],
   ru: [
+    ['Открылись выставки ADEX 2026 и Securex Caspian', 'В Баку Экспо Центре открылись выставки ADEX 2026 и Securex Caspian. В них принимают участие 277 компаний и организаций из 30 стран.'],
     ['1 июня в Баку Экспо Центре стартовала Бакинская энергетическая неделя', 'В Баку Экспо Центре стартовала Baku Energy Week, объединившая Caspian Oil and Gas, Caspian Power и Бакинский энергетический форум. В рамках недели также проходит выставка TransLogistica Caspian.'],
     ['Сегодня в Баку Экспо Центре начала работу 7-я Выставка продвижения местных компаний', 'На выставке представлены продукция и услуги более 300 местных компаний из сфер строительства, пищевой промышленности, ИКТ, образования, промышленности, сельского хозяйства, логистики, текстиля и других направлений.'],
     ['В Баку начала работу 13-я сессия Всемирного форума городов — WUF13', 'Члены ASTA активно участвуют в строительстве выставочных стендов и управлении Urban Expo, где представлены 260 компаний из 85 стран мира.'],
