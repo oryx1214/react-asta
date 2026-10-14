@@ -64,7 +64,7 @@ export function NewsCard({ item, lang = 'az' }) {
       </a>
       <div className="news-body">
         <h3><a href={href}>{item.title}</a></h3>
-        <p>{item.excerpt}</p>
+        {item.excerpt && <p>{item.excerpt}</p>}
         <span><CalendarDays size={16} /> {item.date}</span>
       </div>
     </article>
