@@ -138,14 +138,14 @@ export const news = [
 ];
 
 export const calendarItems = [
-  ['6-cı Azərbaycan Beynəlxalq Müdafiə Sərgisi', '30 sentyabr - 2 oktyabr 2026', 'www.adex.az', 'https://adex.az/', 'ERA_CMS_IMG_68_1768380186.jpg'],
-  ['15-ci Yubiley Beynəlxalq Daxili Təhlükəsizlik, Mühafizə və Xilasetmə Avadanlıqları Sərgisi', '30 sentyabr - 2 oktyabr 2026', '', '#', 'ERA_CMS_IMG_16_1768380379.jpg'],
-  ['6-ci Azərbaycan Beynəlxalq Qarabağın Bərpa, Yenidənqurma və İnkişafı Sərgisi', '14 - 16 oktyabr 2026', 'www.rebuildkarabakh.az', 'https://www.rebuildkarabakh.az/', 'ERA_CMS_IMG_27_1693570322.png'],
-  ['31-cu Azərbaycan Beynəlxalq İnşaat Sərgisi', '14 - 16 oktyabr 2026', 'www.bakubuild.az', 'https://www.bakubuild.az/', 'ERA_CMS_IMG_98_1693566859.png'],
-  ['18-ci Beynəlxalq İstilik, Havalandırma, Kondisionerləşdirilmə, Su təchizatı, Santexnika və Üzgüçülük Hovuzu Sərgisi', '14 - 16 oktyabr 2026', 'www.aquatherm.az', 'https://www.aquatherm.az/', 'ERA_CMS_IMG_82_1741593966.jpg'],
-  ['5-ci Yubiley Xəzər Beynəlxalq Plastik və Polimer Sənayesi Sərgisi', '14 - 16 oktyabr 2026', 'www.plastex.az', 'https://www.plastex.az/', 'ERA_CMS_IMG_79_1768383932.jpg'],
-  ['14-cü Xəzər Beynəlxalq Yol İnfrastrukturu və İctimai Nəqliyyat Sərgisi', '14 - 16 oktyabr 2026', 'www.roadtraffic.az', 'https://www.roadtraffic.az/', 'ERA_CMS_IMG_35_1706711657.png'],
-  ['Azərbaycan Beynəlxalq İdman, Fitnes, Sağlamlıq və Aktiv Həyat Tərzi Sərgisi', { az: '26 - 28 noyabr 2026', en: '26 - 28 November 2026', ru: '26 - 28 ноября 2026' }, '', '#', 'exposport-logo.png'],
+  ['6-cı Azərbaycan Beynəlxalq Müdafiə Sərgisi', { az: '30 sentyabr - 2 oktyabr 2026', en: '30 September - 2 October 2026', ru: '30 сентября - 2 октября 2026' }, 'www.adex.az', 'https://adex.az/', 'ERA_CMS_IMG_68_1768380186.jpg'],
+  ['15-ci Yubiley Beynəlxalq Daxili Təhlükəsizlik, Mühafizə və Xilasetmə Avadanlıqları Sərgisi', { az: '30 sentyabr - 2 oktyabr 2026', en: '30 September - 2 October 2026', ru: '30 сентября - 2 октября 2026' }, '', '#', 'ERA_CMS_IMG_16_1768380379.jpg'],
+  ['6-ci Azərbaycan Beynəlxalq Qarabağın Bərpa, Yenidənqurma və İnkişafı Sərgisi', { az: '14 - 16 oktyabr 2026', en: '14 - 16 October 2026', ru: '14 - 16 октября 2026' }, 'www.rebuildkarabakh.az', 'https://www.rebuildkarabakh.az/', 'ERA_CMS_IMG_27_1693570322.png'],
+  ['31-cu Azərbaycan Beynəlxalq İnşaat Sərgisi', { az: '14 - 16 oktyabr 2026', en: '14 - 16 October 2026', ru: '14 - 16 октября 2026' }, 'www.bakubuild.az', 'https://www.bakubuild.az/', 'ERA_CMS_IMG_98_1693566859.png'],
+  ['18-ci Beynəlxalq İstilik, Havalandırma, Kondisionerləşdirilmə, Su təchizatı, Santexnika və Üzgüçülük Hovuzu Sərgisi', { az: '14 - 16 oktyabr 2026', en: '14 - 16 October 2026', ru: '14 - 16 октября 2026' }, 'www.aquatherm.az', 'https://www.aquatherm.az/', 'ERA_CMS_IMG_82_1741593966.jpg'],
+  ['5-ci Yubiley Xəzər Beynəlxalq Plastik və Polimer Sənayesi Sərgisi', { az: '14 - 16 oktyabr 2026', en: '14 - 16 October 2026', ru: '14 - 16 октября 2026' }, 'www.plastex.az', 'https://www.plastex.az/', 'ERA_CMS_IMG_79_1768383932.jpg'],
+  ['14-cü Xəzər Beynəlxalq Yol İnfrastrukturu və İctimai Nəqliyyat Sərgisi', { az: '14 - 16 oktyabr 2026', en: '14 - 16 October 2026', ru: '14 - 16 октября 2026' }, 'www.roadtraffic.az', 'https://www.roadtraffic.az/', 'ERA_CMS_IMG_35_1706711657.png'],
+  ['Azərbaycan Beynəlxalq İdman, Fitnes, Sağlamlıq və Aktiv Həyat Tərzi Sərgisi', { az: '26 - 28 noyabr 2026', en: '26 - 28 November 2026', ru: '26 - 28 ноября 2026' }, 'www.exposport.az', 'https://exposport.az/ru/main', 'exposport-logo.png'],
   ['Su Təsərrüfatı üzrə 3-cü Beynəlxalq Sərgi və Konfrans', { az: '14 - 16 aprel 2027', en: '14 - 16 April 2027', ru: '14 - 16 апреля 2027' }, 'www.bakuwaterweek.az', 'https://bakuwaterweek.az/', 'baku-water-week-logo.jpg'],
   ['20-ci Yubiley Azərbaycan Beynəlxalq Kənd Təsərrüfatı Sərgisi və Forumu', { az: '19 - 22 may 2027', en: '19 - 22 May 2027', ru: '19 - 22 мая 2027' }, 'www.caspianagroweek.az', 'https://caspianagroweek.az/', 'ERA_CMS_IMG_62_1768377012.webp'],
   ['32-ci Azərbaycan Beynəlxalq Qida Sənayesi Sərgisi', { az: '19 - 22 may 2027', en: '19 - 22 May 2027', ru: '19 - 22 мая 2027' }, 'www.interfood.az', 'https://interfood.az/', 'ERA_CMS_IMG_19_1768377333.jpg'],
