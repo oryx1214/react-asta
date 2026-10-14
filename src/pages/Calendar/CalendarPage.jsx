@@ -13,12 +13,13 @@ export default function CalendarPage({ lang = 'az' }) {
       <div className="calendar-list">
         {calendarItems.map(([, date, site, href, image], index) => {
           const title = calendarTitles[lang][index];
+          const localizedDate = typeof date === 'string' ? date : date[lang];
 
           return (
             <article className="calendar-row" key={title}>
               <img src={asset(image)} alt={title} />
               <div>
-                <p><CalendarDays size={17} /> {date}</p>
+                <p><CalendarDays size={17} /> {localizedDate}</p>
                 {site ? <a href={href}>{site}</a> : null}
               </div>
               <h3>{title}</h3>
