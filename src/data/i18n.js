@@ -261,7 +261,7 @@ const newsBase = [
 
 const newsCopy = {
   az: [
-    ['ADEX 2026 və Securex Caspian sərgilərinin açılışı keçirilib', 'Sentyabrın 30-da Bakı Ekspo Mərkəzində Qafqaz regionunun ən iri hərbi-texnoloji platformalarından biri olan və dünya müdafiə sənayesinin aparıcı şirkətlərini bir araya gətirən ADEX 2026 - 6-cı Azərbaycan Beynəlxalq Müdafiə və Securex Caspian - 15-ci Beynəlxalq “Daxili təhlükəsizlik, Mühafizə və Xilasetmə texnikası” Sərgilərinin açılışı keçirilib.'],
+    ['ADEX 2026 və Securex Caspian sərgiləri açılıb', 'Sentyabrın 30-da Bakı Ekspo Mərkəzində Qafqaz regionunun ən iri hərbi-texnoloji platformalarından biri olan və dünya müdafiə sənayesinin aparıcı şirkətlərini bir araya gətirən ADEX 2026 - 6-cı Azərbaycan Beynəlxalq Müdafiə və Securex Caspian - 15-ci Beynəlxalq “Daxili təhlükəsizlik, Mühafizə və Xilasetmə texnikası” Sərgilərinin açılışı keçirilib.'],
     ['1 iyun tarixində Bakı Ekspo Mərkəzində Bakı Enerji Həftəsi (Baku Energy Week) öz işinə başlayıb', 'Bakı Ekspo Mərkəzində üç mühüm tədbiri birləşdirən “Bakı Enerji Həftəsi”nə start verilib: Caspian Oil and Gas, Caspian Power və Bakı Enerji Forumu. Həftə çərçivəsində TransLogistica Caspian sərgisi də keçirilir.'],
     ['Bugündən etibarən Bakı Ekspo Mərkəzində “7-ci Yerli Şirkətlərin Tanıtım Sərgisi” öz işinə başlayıb', 'Sərgidə inşaat, qida, İKT, təhsil, sənaye, kənd təsərrüfatı, logistika, tekstil və digər sahələrdə fəaliyyət göstərən 300-dən çox yerli şirkətin məhsul və xidmətləri nümayiş olunur.'],
     ['Bakıda Ümumdünya Şəhərsalma Forumunun 13-cü sessiyası — WUF13 öz işinə başlayıb', 'ASTA üzvləri Urban Expo sərgisində stendlərin qurulmasında və sərginin idarə olunmasında aktiv iştirak edirlər. Sərgidə dünyanın 85 ölkəsindən 260 şirkət iştirak edir.'],
