@@ -39,6 +39,8 @@
 }
 
 .calendar-row img {
+  width: 130px;
+  height: 70px;
   max-height: 70px;
   max-width: 130px;
   object-fit: contain;
