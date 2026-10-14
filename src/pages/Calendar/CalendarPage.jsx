@@ -17,7 +17,9 @@ export default function CalendarPage({ lang = 'az' }) {
 
           return (
             <article className="calendar-row" key={title}>
-              <img src={asset(image)} alt={title} />
+              {image
+                ? <img src={asset(image)} alt={title} />
+                : <span className="calendar-logo-placeholder" aria-hidden="true"><CalendarDays size={36} /></span>}
               <div>
                 <p><CalendarDays size={17} /> {localizedDate}</p>
                 {site ? <a href={href}>{site}</a> : null}

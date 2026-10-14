@@ -44,6 +44,16 @@
   object-fit: contain;
 }
 
+.calendar-logo-placeholder {
+  display: grid;
+  place-items: center;
+  width: 70px;
+  height: 70px;
+  color: var(--blue);
+  border-radius: 50%;
+  background: rgba(15, 109, 184, 0.1);
+}
+
 :root[data-theme="dark"] .calendar-row img {
   padding: 7px 10px;
   border: 1px solid rgba(216, 234, 250, 0.72);

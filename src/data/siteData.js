@@ -138,14 +138,6 @@ export const news = [
 ];
 
 export const calendarItems = [
-  ['19-ci Azərbaycan Beynəlxalq Kənd Təsərrüfatı Sərgisi', '5 - 8 may 2026', 'www.caspianagro.az', 'https://www.caspianagro.az/', 'ERA_CMS_IMG_62_1768377012.webp'],
-  ['31-ci Azərbaycan Beynəlxalq Qida Sənayesi Sərgisi', '5 - 8 may 2026', 'www.interfood.az', 'https://www.interfood.az/', 'ERA_CMS_IMG_19_1768377333.jpg'],
-  ['14-cü Xəzər Beynəlxalq Mehmanxana, Restoran və Supermarketlər üçün Avadanlıq və Ləvazimatlar Sərgisi', '5 - 8 may 2026', 'www.horecaexpo.az', 'https://www.horecaexpo.az/', 'ERA_CMS_IMG_12_1768379189.jpg'],
-  ['23-ci Xəzər Beynəlxalq Nəqliyyat, Tranzit və Logistika Sərgisi', '1 - 3 iyun 2026', 'www.translogistica.az', 'https://www.translogistica.az/', 'ERA_CMS_IMG_94_1736164972.webp'],
-  ['14-cü Xəzər Beynəlxalq Energetika və Yaşıl Enerji Sərgisi', '1 - 3 iyun 2026', 'www.caspianpower.az', 'https://www.caspianpower.az/', 'ERA_CMS_IMG_86_1736165246.webp'],
-  ['31-cu Bakı Enerji Forumu', '1 - 2 iyun 2026', 'www.bakuenergyforum.az', 'https://www.bakuenergyforum.az/', 'ERA_CMS_IMG_72_1736165311.png'],
-  ['31-ci Beynəlxalq Xəzər Neft və Qaz Sərgisi', '1 - 3 iyun 2026', 'www.caspianoilgas.az', 'https://www.caspianoilgas.az/', 'ERA_CMS_IMG_91_1736165043.png'],
-  ['2-ci Xəzər Beynəlxalq Nəqliyyat və Logistika Forumu', '3 iyun 2026', '', '#', 'ERA_CMS_IMG_28_1768379868.jpg'],
   ['6-cı Azərbaycan Beynəlxalq Müdafiə Sərgisi', '30 sentyabr - 2 oktyabr 2026', 'www.adex.az', 'https://adex.az/', 'ERA_CMS_IMG_68_1768380186.jpg'],
   ['15-ci Yubiley Beynəlxalq Daxili Təhlükəsizlik, Mühafizə və Xilasetmə Avadanlıqları Sərgisi', '30 sentyabr - 2 oktyabr 2026', '', '#', 'ERA_CMS_IMG_16_1768380379.jpg'],
   ['6-ci Azərbaycan Beynəlxalq Qarabağın Bərpa, Yenidənqurma və İnkişafı Sərgisi', '14 - 16 oktyabr 2026', 'www.rebuildkarabakh.az', 'https://www.rebuildkarabakh.az/', 'ERA_CMS_IMG_27_1693570322.png'],
@@ -154,6 +146,15 @@ export const calendarItems = [
   ['5-ci Yubiley Xəzər Beynəlxalq Plastik və Polimer Sənayesi Sərgisi', '14 - 16 oktyabr 2026', 'www.plastex.az', 'https://www.plastex.az/', 'ERA_CMS_IMG_79_1768383932.jpg'],
   ['14-cü Xəzər Beynəlxalq Yol İnfrastrukturu və İctimai Nəqliyyat Sərgisi', '14 - 16 oktyabr 2026', 'www.roadtraffic.az', 'https://www.roadtraffic.az/', 'ERA_CMS_IMG_35_1706711657.png'],
   ['Azərbaycan Beynəlxalq İdman, Fitnes, Sağlamlıq və Aktiv Həyat Tərzi Sərgisi', { az: '26 - 28 noyabr 2026', en: '26 - 28 November 2026', ru: '26 - 28 ноября 2026' }, '', '#', 'exposport-logo.png'],
+  ['Su Təsərrüfatı üzrə 3-cü Beynəlxalq Sərgi və Konfrans', { az: '14 - 16 aprel 2027', en: '14 - 16 April 2027', ru: '14 - 16 апреля 2027' }, 'www.bakuwaterweek.az', 'https://bakuwaterweek.az/', null],
+  ['20-ci Yubiley Azərbaycan Beynəlxalq Kənd Təsərrüfatı Sərgisi və Forumu', { az: '19 - 22 may 2027', en: '19 - 22 May 2027', ru: '19 - 22 мая 2027' }, 'www.caspianagroweek.az', 'https://caspianagroweek.az/', 'ERA_CMS_IMG_62_1768377012.webp'],
+  ['32-ci Azərbaycan Beynəlxalq Qida Sənayesi Sərgisi', { az: '19 - 22 may 2027', en: '19 - 22 May 2027', ru: '19 - 22 мая 2027' }, 'www.interfood.az', 'https://interfood.az/', 'ERA_CMS_IMG_19_1768377333.jpg'],
+  ['Bakı Enerji Həftəsi', { az: '2 - 4 iyun 2027', en: '2 - 4 June 2027', ru: '2 - 4 июня 2027' }, 'www.bew.az', 'https://bew.az/', 'baku-energy-week-2026.jpg'],
+  ['32-ci Beynəlxalq Xəzər Neft və Qaz Sərgisi', { az: '2 - 4 iyun 2027', en: '2 - 4 June 2027', ru: '2 - 4 июня 2027' }, 'www.caspianoilgas.az', 'https://www.caspianoilgas.az/', 'ERA_CMS_IMG_91_1736165043.png'],
+  ['32-ci Bakı Enerji Forumu', { az: '2 - 3 iyun 2027', en: '2 - 3 June 2027', ru: '2 - 3 июня 2027' }, 'www.bakuenergyforum.az', 'https://www.bakuenergyforum.az/', 'ERA_CMS_IMG_72_1736165311.png'],
+  ['15-ci Yubiley Xəzər Beynəlxalq Təmiz Enerji Sərgisi', { az: '2 - 4 iyun 2027', en: '2 - 4 June 2027', ru: '2 - 4 июня 2027' }, 'www.caspianpower.az', 'https://www.caspianpower.az/', 'ERA_CMS_IMG_86_1736165246.webp'],
+  ['24-cü Xəzər Beynəlxalq Nəqliyyat, Tranzit və Logistika Sərgisi', { az: '2 - 4 iyun 2027', en: '2 - 4 June 2027', ru: '2 - 4 июня 2027' }, 'www.translogistica.az', 'https://www.translogistica.az/', 'ERA_CMS_IMG_94_1736164972.webp'],
+  ['1-ci Azərbaycan Beynəlxalq Həyat Tərzi və İstehlak Sənayeləri Sərgisi', { az: '18 - 20 noyabr 2027', en: '18 - 20 November 2027', ru: '18 - 20 ноября 2027' }, 'www.lifex.az', 'https://lifex.az/', 'lifex-favicon.ico'],
 ];
 
 export const joinFields = ['Şirkət', 'Fəaliyyət növü', 'Ünvan', 'Telefon', 'Veb Sayt', 'Şirkət haqqında qısa məlumat', 'Əlaqə üçün şəxs', 'Email', 'Əlaqə nömrəsi'];
