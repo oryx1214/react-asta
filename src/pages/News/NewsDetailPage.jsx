@@ -17,7 +17,6 @@ export default function NewsDetailPage({ slug, lang = 'az' }) {
         <article className="article-page">
           <img src={asset(item.image)} alt={item.title} />
           <p className="article-date"><CalendarDays size={17} /> {item.date}</p>
-          {item.excerpt && <p>{item.excerpt}</p>}
           {body.map((paragraph, index) => (
             <p key={`${item.slug}-paragraph-${index}`}>{paragraph}</p>
           ))}
