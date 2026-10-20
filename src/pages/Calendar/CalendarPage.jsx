@@ -12,6 +12,8 @@ export default function CalendarPage({ lang = 'az' }) {
     <Page title={page.titles.calendar} lang={lang}>
       <div className="calendar-list">
         {calendarItems.map(([, date, site, href, image], index) => {
+          if (site === 'www.exposport.az') return null;
+
           const title = calendarTitles[lang][index];
           const localizedDate = typeof date === 'string' ? date : date[lang];
 
