@@ -4,7 +4,11 @@ import { pages, withLang } from '../../data/i18n.js';
 import { asset } from '../../utils/assets.js';
 import './MembersPage.css';
 
-const membersPageItems = [...members, ['Atmosfera', 'atmosfera-logo.jpg']];
+const membersPageItems = [
+  ...members,
+  ['Atmosfera', 'atmosfera-logo.jpg'],
+  ['Promo Expo', 'promo-expo-logo.png'],
+];
 
 export default function MembersPage({ lang = 'az' }) {
   return (
