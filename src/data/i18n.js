@@ -141,8 +141,8 @@ const leaderBase = [
 
 const leaderCopy = {
   az: {
-    role: ['İdarə heyətinin sədri, ASTA', 'İdarə heyətinin üzvü, ASTA', 'İdarə heyətinin üzvü, ASTA', 'Baş katib, ASTA'],
-    bio: ['ASTA-nın idarə heyətinin sədri kimi sərgi sənayesinin inkişafı, beynəlxalq əməkdaşlıq və üzv şirkətlər arasında koordinasiya istiqamətlərinə rəhbərlik edir.', 'Sərgi və tədbir sənayesində peşəkar təcrübəsi ilə assosiasiyanın idarəetmə və inkişaf fəaliyyətində iştirak edir.', 'ASTA-nın strateji təşəbbüslərində, üzvlərlə əməkdaşlıqda və sahə üzrə yeni imkanların formalaşdırılmasında iştirak edir.', 'Assosiasiyanın gündəlik koordinasiyası, üzvlərlə kommunikasiya və təşkilati proseslərin aparılmasına dəstək verir.'],
+    role: ['İdarə Heyətinin sədri, ASTA', 'İdarə Heyətinin üzvü, ASTA', 'İdarə Heyətinin üzvü, ASTA', 'Baş katib, ASTA'],
+    bio: ['ASTA-nın idarə Heyətinin sədri kimi sərgi sənayesinin inkişafı, beynəlxalq əməkdaşlıq və üzv şirkətlər arasında koordinasiya istiqamətlərinə rəhbərlik edir.', 'Sərgi və tədbir sənayesində peşəkar təcrübəsi ilə assosiasiyanın idarəetmə və inkişaf fəaliyyətində iştirak edir.', 'ASTA-nın strateji təşəbbüslərində, üzvlərlə əməkdaşlıqda və sahə üzrə yeni imkanların formalaşdırılmasında iştirak edir.', 'Assosiasiyanın gündəlik koordinasiyası, üzvlərlə kommunikasiya və təşkilati proseslərin aparılmasına dəstək verir.'],
   },
   en: {
     role: ['Chairman of the Board, ASTA', 'Board member, ASTA', 'Board member, ASTA', 'Secretary General, ASTA'],
